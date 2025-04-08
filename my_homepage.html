@@ -1,0 +1,105 @@
+<!-- This is a template of HTML style. -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewprt" content = "width=device-width, initial-scale = 1.0">
+    <!--  -->
+    <title> Kazuma Kimura</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header>
+        <h1> Welcome to My website</h1>
+        <nav>
+            <ul>
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#publication">Publication</a></li>
+                <li><a href = "#presentation">Presentation</a></li>
+                <li><a href = "#cv">CV</a></li>
+                <li><a href = "#blogs">Blogs</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id = "home">
+        <h2>Home</h2>
+
+        <p>This is the home section of the website.</p>
+        <p>I am a graduate student at the University of Tsukuba and the University of Autonomous Barcelona. </p>
+        <h3>Research interest</h3>
+        <h4>General</h4>
+        <ol>
+            <li>Experimental/ theoretical Syntax</li>
+            <li>Sentence processing</li>
+            <li>Computational linguistics</li>
+        </ol>
+        <h4>Specific</h4>
+        <ol>
+            <li>The syntax and semantics of quantifiers in natural languages</li>
+            <li>The real time status of quantifiers</li>
+            <li>Computational model of processing operator-variable relationships</li>
+        </ol>
+        
+    </section>
+
+    <section id = "publication">
+        <h2>Publication</h2>
+        <p>This is the publication section of the website.</p>
+        <ol>
+            <li>1. </li>
+            <li>2. </li>
+            <li>3. </li>
+            <li.>4. </li.>
+        </ol>
+    </section>
+
+    <section id = "presentation">
+        <h2>Presentation</h2>
+        <p>This is the presentation section of the website.</p>
+        <ol>
+            <li>1. </li>
+            <li>2. </li>
+            <li>3. </li>
+            <li.>4. </li.>
+        </ol>
+    </section>
+
+    <section id = "cv">
+        <h2>CV</h2>
+        <p>This is the CV section of the website.</p>
+    </section>
+
+    <section id = "blogs">
+        <h2>Blogs</h2>
+        <p>This is the blogs section of the website.</p>
+        <a href="#" onclick="document.getElementById('blogframe').src='post_1.html';">View Blog Post 1</a>
+        <a href="#" onclick="document.getElementById('blogframe').src='post_2.html';">View Blog Post 2</a>
+        <a href="#" onclick="document.getElementById('blogframe').src='post_3.html';">View Blog Post 3</a>
+        <iframe id="blogframe" src="" width="100%" height="500px"></iframe>
+
+    </section>
+
+    <section id = "contact">
+        <h2>Contact</h2>
+        <p>If you would like to contact with me, you can write in the following form.</p>
+        <form action=" "/submit_form" method="post">
+            <label for = "name">Name:</label>
+            <input type = "text" id = "name" name = "name">
+            <br><br>
+
+            <label for = "email">Email:</label>
+            <input type = "email" id =  "email" name = "email">
+            <br><br>
+
+            <input type = "submit" value = "Submit">
+        </form>
+
+    </section>
+    <footer>
+        <p>&cpy; 2025 Kazuma Kimura</p>
+    </footer>
+</body>
+<html>
