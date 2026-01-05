@@ -5,93 +5,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewprt" content = "width=device-width, initial-scale = 1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--  -->
     <title> Kazuma Kimura</title>
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
     <header>
-        <h1> Kazuma Kimura </h1>
-    
-        <div class = "container">
-        <nav class = "sidebar">
-            <h2>Menu</h2>
+      <div class = "header-wrapper">
+        <img src="assets/img/myicon.HEIC" alt="Kazuma Kimura" class="profile-pic">
+      <div class="header-container">
+          <h1>Kazuma Kimura</h1>
+        <div class="nav-and-icons">
+          <nav class="sidebar">
             <ul>
-                <li><a href = "#home">Home</a></li>
-                <li><a href = "#publication">Publication</a></li>
-                <li><a href = "#presentation">Presentation</a></li>
-                <li><a href = "#cv">CV</a></li>
-                <li><a href = "#my_homepage.html">Blogs</a></li>
-                <li><a href = "#contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="publication.html">Publications</a></li>
+              <li><a href="presentation.html">Presentations</a></li>
+              <li><a href="cv.html">CV</a></li>
+              <li><a href="my_homepage.html">Blogs</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id = "home">
-        <h2>Home</h2>
-
-        <p>This is the home section of the website.</p>
-        <p>I am a graduate student at the University of Tsukuba and the University of Autonomous Barcelona. </p>
-        <h3>Research interest</h3>
-        <h4>General</h4>
-        <ol>
-            <li>Experimental/ theoretical Syntax</li>
-            <li>Sentence processing</li>
-            <li>Computational linguistics</li>
-        </ol>
+          </nav>
+      
+          <div class="social-icons">
+            <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      </header>
+      
+    <div class = "card">
+      <h2>Home</h2>
+        <div class = "center-wrapper">
+          <div class = "center-box">
+            <p>I am a graduate student at the University of Autonomous Barcelona (Universitat Autonoma de Barcelona). I am currently working with Masaya Yoshida (UAB) on syntax, sentence processing, and Saku Sugawara (NII) on natural language processing/ cognitive modeling. I am also working at Ichikara as a full-time worker (LLM annotator).</p>
+          </div>
+    </div>
+    </div>
+        <h3><i class="fas fa-graduation-cap"></i> Research interest</h3>
+        <div class = "research-container">
+          <div class = "research-column">
+          <h4>General</h4>
+            <div class = "center-list">
+              <ol>
+                <li>Formal syntax</li>
+                <li>Sentence processing</li>
+                <li>Computational linguistics</li>
+              </ol>
+            </div>
+          </div>
+          <div class = "research-column">
         <h4>Specific</h4>
-        <ol>
-            <li>The syntax and semantics of quantifiers in natural languages</li>
-            <li>The real time status of quantifiers</li>
-            <li>Computational model of processing operator-variable relationships</li>
-        </ol>
-        
-    </section>
-
-    <section id = "publication">
-        <h2>Publication</h2>
-        <p>This is the publication section of the website.</p>
-        <ol>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-            <li.> </li.>
-        </ol>
-    </section>
-
-    <section id = "presentation">
-        <h2>Presentation</h2>
-        <p>This is the presentation section of the website.</p>
-        <ol>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-            <li.> </li.>
-        </ol>
-    </section>
-
-    <section id = "cv">
-        <h2>CV</h2>
-        <p>This is the CV section of the website.</p>
-    </section>
-
-
-    <section id = "contact">
-        <h2>Contact</h2>
-        <p>If you would like to contact with me, you can write in the following form.</p>
-        <form action=" "/submit_form" method="post">
-            <label for = "name">Name:</label>
-            <input type = "text" id = "name" name = "name">
-            <br><br>
-
-            <label for = "email">Email:</label>
-            <input type = "email" id =  "email" name = "email">
-            <br><br>
-
-            <input type = "submit" value = "Submit">
-        </form>
-
-    </section>
+            <div class = "center-list">
+              <ol>
+                <li>The syntax and semantics of quantifiers in natural languages</li>
+                <li>The real time status of quantifiers</li>
+                <li>Computational model of processing operator-variable relationships</li>
+              </ol>  
+            </div>
+        </div>
+        </div>
+        <div class = "card">
+        <h3><i class="fas fa-heart"></i> Hobbies</h3>
+        <div class = "center-wrapper">
+          <div class = "center-box">
+            <p> Growing <b>a cat</b>, <b>working out</b>, and <b>walking around Senba lake</b> (in Mito city). the Senba lake is one of the biggest lakes in Japan, and I love to walk and run around it.</p>
+            <div class = "center-wrapper">
+              <div class = "center-box">
+              <img src = "assets/img/sakura.HEIC" alt = "Sakura at the Senba Lake" width="400" height="300"> 
+              <img src = "assets/img/cat.HEIC" alt = "my cat" width="250" height="300">
+              <img src = "assets/img/book.HEIC" alt = "my books" width = "300" height = "300">
+            </div>
+            </div> 
+        </div>
+      </div>
+      </div>
+        <div class = "card">
+        <h3><i class="fas fa-book"></i> Updates</h3>
+        <div class = "center-wrapper">
+        <div class = "center-box">
+        <p> (2025/5/1) I have been selected as a Research Assistant at the National Institue of Informatics (NII).</p>
+        <p>(2025/4/25) I have been selected to participate Summer School on Statistical Methods for Linguistics and Psychology</p>
+        <p> (2025/4/1) I have occpied the full-time position at Ichikara cooporation as a LLM annotator.</p>
+      </div>
+    </div>
+  </div>
     <footer>
         <p>&copy; 2025 Kazuma Kimura</p>
     </footer>

@@ -1,18 +1,68 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 20pt;
+    background-color: #fdf8f8;
+
+    justify-content: center;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.horizontal-nav {
+    display: flex;
+    height: 100vh; /* 全体の高さ */
+    width: 200px;
+    position: fixed; 
+    top: 0;
+    flex-direction: row;
+    justify-content: center; /* 固定表示にする */
+    background-color: #68829c;
 }
+
+.card {
+    background: white;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+  
+  /* ホバー時の色変更 */
+  .sidebar ul li a:hover {
+    color: #18a287;
+  }
+  
+  /* メインコンテンツのスペース確保 */
+  .main-content {
+    max-width: 700px;
+    margin-left: 100px;
+    margin-right: 100px; /* サイドバーの幅＋余白 */
+    padding: 0 30px;
+    flex-grow: 1;
+  }
+
+header {
+    display: flex;
+    background-color: #efeef7;
+    color: #dcbdbd;
+    height: 170px;     /* 高さを固定 */
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.center-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .center-list ol {
+    text-align: left; /* テキストは左揃え */
+    list-style-position: inside; /* 番号をテキストの内側に */
+  }
 
 nav ul {
     list-style: none;
@@ -21,17 +71,19 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: rgb(21, 5, 5);
+    text-decoration:lab(from color l a b);
+    font-weight: bold
 }
 
 section {
     padding: 20px;
     margin: 20px 0;
+    text-align: center;
     background-color: #fff;
 }
 
@@ -42,21 +94,200 @@ footer {
     color: white;
 }
 
-/* here are font style stuffs*/
+.profile-pic{
+position: absolute;
+top: 10px;
+left: 30px; /* if you want to align the picture more left of the header, please modify this option*/
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+}
 
 h1{
+    text-align: center;
     color:black;
-    font-size:2 em;
+    font-size:0.8 em;
+
+}
+
+h2{
+    text-align: center;
+
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    font-size: 1.0em;
+    color: #0d0101;
+    background-color: #abcef0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.0;   
 }
 
-/* in cases where the width is less than 600px */
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column; /* アイテムを縦に並べる */
+.center-wrapper {
+    justify-content: center;
+    display: flex;
+    margin: 10px; /* 上下の余白 */
+  }
+  
+  /* 中身のボックス：幅を決めてテキストは左寄せ */
+  .center-box {
+    max-width: 1000px;
+    width: 100%;
+    text-align: left;
+  }
+
+.research-container {
+    display: flex;
+    justify-content: center;      /* 中央寄せ */
+    gap: 40px;                    /* 2列の間隔 */
+    flex-wrap: wrap;              /* 画面が狭い時は縦に折り返す */
+    margin: 20px 0;
+  }
+  
+  .research-column {
+    width: 600px;                 /* 各列の幅を固定（または割合） */
+    text-align: left;
+  }
+  
+  .center-list ol {
+    padding-left: 10px;
+  }
+  
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.0rem;
+    width: 2.0rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.0rem;
+    margin-right: 1.0rem;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
+  }
+  .social-icons .social-icon:hover {
+    background-color: #bd5d38;
+  }
+  
+  .dev-icons {
+    font-size: 2rem;
+  }
+
+
+  .header-wrapper{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header-container {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  
+  .nav-and-icons {
+    display: flex; /* 横並びにする */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 70px; /* nav と social-icons の間の余白 */
+  }
+  
+  .sidebar{
+    width: 600px;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  .sidebar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size:1.2 em;
+  }
+  
+  /* social-icons の見た目を調整 */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    color: #444;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #1da1f2; /* Twitterブルーとかに変える */
+  }
+
+  .reference{
+    text-indent: -10px;
+    padding-left: 0px;
+    justify-content: center;
+  }
+
+  .center-reference{
+    justify-content: center;
+    text-align: left;
+  }
+
+@media (max-width: 768px) {
+    .research-container {
+      flex-direction: column; /* スマホでは縦並びに */
     }
-}
+  
+    .research-column {
+      text-align: center; /* テキストを中央揃えに */
+      margin-bottom: 20px; /* 各セクション間にスペースを追加 */
+    }
+  
+    .research-column img {
+      width: 80%; /* 画像の幅を調整 */
+      margin: 0 auto; /* 中央に配置 */
+    }
+  }
 
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column; /* スマホ画面では縦に並べる */
+    }
+  
+    .sidebar {
+      width: 100%; 
+      min-width: 100%;/* スマホではサイドバーの幅を100%に */
+      padding: 10px;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  
