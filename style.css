@@ -98,7 +98,7 @@ h1 {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 22px;
+  gap: 36px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -110,8 +110,8 @@ h1 {
 .sidebar ul li a {
   text-decoration: none;
   color: var(--text);
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1.30rem;
   padding: 6px 2px;
   border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -414,4 +414,51 @@ footer p {
     width: 2.2rem;
     font-size: 0.95rem;
   }
+}
+
+.year-section {
+  max-width: 900px;
+  margin: 0 auto 28px auto;
+}
+
+.year-section:last-child {
+  margin-bottom: 0;
+}
+
+.year-heading {
+  text-align: left;
+  font-size: 1.3rem;
+  color: var(--accent-dark);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent-light);
+}
+
+.presentation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.presentation-list li {
+  background: #f8fbff;
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--accent);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  line-height: 1.8;
+  color: var(--text);
+  box-shadow: var(--shadow-soft);
+}
+
+.presentation-list li:last-child {
+  margin-bottom: 0;
+}
+
+.empty-note {
+  text-align: center;
+  color: var(--text-soft);
+  font-style: italic;
+  margin: 0;
 }
