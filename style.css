@@ -110,8 +110,8 @@ h1 {
 .sidebar ul li a {
   text-decoration: none;
   color: var(--text);
-  font-weight: 800;
-  font-size: 1.30rem;
+  font-weight: 600;
+  font-size: 1.05rem;
   padding: 6px 2px;
   border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -208,12 +208,15 @@ p {
 
 .center-box {
   width: 100%;
-  max-width: 900px;
-  text-align: left;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .center-box p {
   color: var(--text-soft);
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.9;
 }
 
 /* ---------- Research ---------- */
