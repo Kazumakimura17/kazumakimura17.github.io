@@ -463,15 +463,15 @@ footer p {
 }
 
 .presentation-list li {
-  background: #e8edf5;
-  border: 1px solid #7c8ca3;
-  border-left: 6px solid #6b7fa0;
+  background: linear-gradient(180deg, #dfe5ee 0%, #d4dbe6 100%);
+  border: 1px solid #76879d;
+  border-left: 6px solid #7083a3;
   border-radius: 12px;
   padding: 18px 20px;
   margin-bottom: 14px;
   line-height: 1.8;
-  color: #1a2230;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  color: #16202b;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .presentation-list li:last-child {
