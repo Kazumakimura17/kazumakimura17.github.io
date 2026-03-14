@@ -1,17 +1,17 @@
 /* style.css */
 :root {
-  --bg: #f5f7fb;
-  --surface: #ffffff;
-  --surface-soft: #eef3f8;
-  --header-bg: #e8eef5;
-  --text: #1f2937;
-  --text-soft: #475569;
-  --accent: #4f6d8a;
-  --accent-dark: #39556f;
-  --accent-light: #d9e4ef;
-  --border: #d7e0ea;
-  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  --shadow-soft: 0 4px 12px rgba(15, 23, 42, 0.06);
+  --bg: #e9edf3;
+  --surface: #f7f9fc;
+  --surface-soft: #dde5ee;
+  --header-bg: #d6dee8;
+  --text: #17202c;
+  --text-soft: #364152;
+  --accent: #3f5b78;
+  --accent-dark: #26384d;
+  --accent-light: #bfcddb;
+  --border: #bcc8d6;
+  --shadow: 0 8px 24px rgba(10, 18, 30, 0.12);
+  --shadow-soft: 0 4px 12px rgba(10, 18, 30, 0.08);
   --radius: 14px;
   --content-width: 1100px;
 }
@@ -29,7 +29,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 1.7;
-  background: linear-gradient(to bottom, #f7f9fc 0%, #f3f6fb 100%);
+  background: linear-gradient(to bottom, #e7ecf2 0%, #dde5ee 100%);
   color: var(--text);
 }
 
@@ -40,7 +40,7 @@ body {
 
 /* ---------- Header ---------- */
 header {
-  background: linear-gradient(135deg, #edf2f8 0%, #e3ebf4 100%);
+  background: linear-gradient(135deg, #d9e1ea 0%, #cfd8e3 100%);
   box-shadow: var(--shadow);
   margin-top: 24px;
   border-radius: var(--radius);
@@ -100,7 +100,7 @@ h1 {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 36px;
+  gap: 48px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -113,7 +113,7 @@ h1 {
   text-decoration: none;
   color: var(--text);
   font-weight: 600;
-  font-size: 1.80rem;
+  font-size: 1.50rem;
   padding: 6px 2px;
   border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -187,7 +187,7 @@ h3 {
 h4 {
   font-size: 1.05rem;
   color: #ffffff;
-  background: linear-gradient(135deg, var(--accent) 0%, #6b86a1 100%);
+  background: linear-gradient(135deg, #3f5b78 0%, #54708d 100%);
   padding: 12px 14px;
   border-radius: 12px;
   text-align: center;
@@ -288,7 +288,7 @@ a:hover {
 footer {
   text-align: center;
   padding: 18px 16px;
-  background: linear-gradient(135deg, #334155 0%, #243242 100%);
+  background: linear-gradient(135deg, #243142 0%, #182231 100%);
   color: white;
   border-radius: 14px 14px 0 0;
   margin-top: 12px;
