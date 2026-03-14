@@ -463,15 +463,15 @@ footer p {
 }
 
 .presentation-list li {
-  background: #f8fbff;
-  border: 1px solid var(--border);
-  border-left: 6px solid var(--accent);
+  background: #e8edf5;
+  border: 1px solid #7c8ca3;
+  border-left: 6px solid #6b7fa0;
   border-radius: 12px;
   padding: 18px 20px;
   margin-bottom: 14px;
   line-height: 1.8;
-  color: var(--text);
-  box-shadow: var(--shadow-soft);
+  color: #1a2230;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
 .presentation-list li:last-child {
@@ -546,18 +546,20 @@ footer p {
 
 .presentation-links a {
   display: inline-block;
-  padding: 6px 12px;
-  background-color: var(--accent-light);
-  color: var(--accent-dark);
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #2b3448 0%, #3b4660 100%);
+  color: #d7c8ff;
   text-decoration: none;
   font-weight: 700;
-  border-radius: 8px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 10px;
+  border: 1px solid rgba(180, 170, 255, 0.2);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .presentation-links a:hover {
-  background-color: var(--accent);
-  color: white;
+  background: linear-gradient(135deg, #4d5f87 0%, #6c5aa8 100%);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .pdf-details {
