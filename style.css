@@ -570,6 +570,10 @@ footer p {
   border-radius: 10px;
   background-color: white;
 }
+.cv-list-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 .cv-list {
   display: flex;
