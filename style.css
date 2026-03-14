@@ -512,3 +512,9 @@ footer p {
   margin: 0 8px;
   color: var(--text-soft);
 }
+
+.social-icon-text span {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1;
+}
