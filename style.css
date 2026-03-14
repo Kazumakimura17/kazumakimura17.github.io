@@ -453,10 +453,10 @@ footer p {
 .year-heading {
   text-align: left;
   font-size: 1.3rem;
-  color: var(--accent-dark);
+  color: #a691e6;
   margin-bottom: 14px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--accent-light);
+  border-bottom: 2px solid rgba(120, 136, 160, 0.35);
 }
 
 .presentation-list {
@@ -466,15 +466,15 @@ footer p {
 }
 
 .presentation-list li {
-  background: linear-gradient(180deg, #dfe5ee 0%, #d4dbe6 100%);
-  border: 1px solid #76879d;
-  border-left: 6px solid #7083a3;
+  background: linear-gradient(180deg, #1a2230 0%, #161d29 100%);
+  border: 1px solid rgba(120, 136, 160, 0.28);
+  border-left: 6px solid #6f82a6;
   border-radius: 12px;
   padding: 18px 20px;
   margin-bottom: 14px;
-  line-height: 1.8;
-  color: #16202b;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  line-height: 1.85;
+  color: #dde6f5;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
 }
 
 .presentation-list li:last-child {
@@ -486,6 +486,73 @@ footer p {
   color: var(--text-soft);
   font-style: italic;
   margin: 0;
+}
+
+/* publication / presentation カード内の文字色と配置 */
+.presentation-list li,
+.presentation-list li p,
+.presentation-list li span,
+.presentation-list li div {
+  color: #dde6f5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.presentation-list li em {
+  color: #eef3ff;
+  font-style: italic;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.presentation-entry p {
+  margin: 0;
+  color: #dde6f5;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.85;
+}
+
+.presentation-links {
+  margin-top: 12px;
+}
+
+.presentation-links a {
+  display: inline-block;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #2a3448 0%, #37445f 100%);
+  color: #d7c8ff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 1px solid rgba(173, 160, 255, 0.16);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.presentation-links a:hover {
+  background: linear-gradient(135deg, #44547a 0%, #6555a2 100%);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 0 12px rgba(120, 108, 196, 0.22);
+}
+
+.pdf-details {
+  margin-top: 14px;
+}
+
+.pdf-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #c9d5eb;
+  margin-bottom: 10px;
+}
+
+.pdf-embed {
+  width: 100%;
+  height: 600px;
+  border: 1px solid rgba(120, 136, 160, 0.28);
+  border-radius: 10px;
+  background-color: #101722;
 }
 
 .home-links {
