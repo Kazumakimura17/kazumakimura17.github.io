@@ -570,3 +570,55 @@ footer p {
   border-radius: 10px;
   background-color: white;
 }
+
+.cv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.cv-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cv-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cv-date {
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.cv-content {
+  color: var(--text-soft);
+}
+
+.cv-place {
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.cv-detail {
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .cv-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .cv-date {
+    font-size: 0.98rem;
+  }
+}
