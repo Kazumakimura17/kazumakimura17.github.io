@@ -1,21 +1,20 @@
 /* style.css */
 :root {
-  --bg: #e9edf3;
-  --surface: #f7f9fc;
-  --surface-soft: #dde5ee;
-  --header-bg: #d6dee8;
-  --text: #17202c;
-  --text-soft: #364152;
-  --accent: #3f5b78;
-  --accent-dark: #26384d;
-  --accent-light: #bfcddb;
-  --border: #bcc8d6;
-  --shadow: 0 8px 24px rgba(10, 18, 30, 0.12);
-  --shadow-soft: 0 4px 12px rgba(10, 18, 30, 0.08);
+  --bg: #e2e7ed;
+  --surface: #f3f5f8;
+  --surface-soft: #d8dee6;
+  --header-bg: #cfd6df;
+  --text: #151c24;
+  --text-soft: #3e4957;
+  --accent: #4b6278;
+  --accent-dark: #2f3f50;
+  --accent-light: #b9c4cf;
+  --border: #b3beca;
+  --shadow: 0 8px 24px rgba(12, 18, 28, 0.14);
+  --shadow-soft: 0 4px 12px rgba(12, 18, 28, 0.10);
   --radius: 14px;
   --content-width: 1100px;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -29,7 +28,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 1.7;
-  background: linear-gradient(to bottom, #e7ecf2 0%, #dde5ee 100%);
+  background: linear-gradient(to bottom, #dde3ea 0%, #d2d9e1 100%);
   color: var(--text);
 }
 
@@ -40,7 +39,7 @@ body {
 
 /* ---------- Header ---------- */
 header {
-  background: linear-gradient(135deg, #d9e1ea 0%, #cfd8e3 100%);
+  background: linear-gradient(135deg, #cfd6de 0%, #c3ccd6 100%);
   box-shadow: var(--shadow);
   margin-top: 24px;
   border-radius: var(--radius);
@@ -187,7 +186,7 @@ h3 {
 h4 {
   font-size: 1.05rem;
   color: #ffffff;
-  background: linear-gradient(135deg, #3f5b78 0%, #54708d 100%);
+  background: linear-gradient(135deg, #4b6278 0%, #61788d 100%);
   padding: 12px 14px;
   border-radius: 12px;
   text-align: center;
