@@ -1,17 +1,17 @@
 /* style.css */
 :root {
-  --bg: #e2e7ed;
-  --surface: #f3f5f8;
-  --surface-soft: #d8dee6;
-  --header-bg: #cfd6df;
-  --text: #151c24;
-  --text-soft: #3e4957;
-  --accent: #4b6278;
-  --accent-dark: #2f3f50;
-  --accent-light: #b9c4cf;
-  --border: #b3beca;
-  --shadow: 0 8px 24px rgba(12, 18, 28, 0.14);
-  --shadow-soft: 0 4px 12px rgba(12, 18, 28, 0.10);
+  --bg: #0f131a;
+  --surface: #171c24;
+  --surface-soft: #1d2430;
+  --header-bg: #151b24;
+  --text: #e7edf7;
+  --text-soft: #b8c3d6;
+  --accent: #5e6f8f;
+  --accent-dark: #8b79c9;
+  --accent-light: #2a3344;
+  --border: #2d3748;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.22);
   --radius: 14px;
   --content-width: 1100px;
 }
@@ -28,7 +28,9 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 1.7;
-  background: linear-gradient(to bottom, #dde3ea 0%, #d2d9e1 100%);
+  background:
+    radial-gradient(circle at top, rgba(101, 84, 160, 0.12), transparent 30%),
+    linear-gradient(to bottom, #0d1117 0%, #111827 55%, #0c1016 100%);
   color: var(--text);
 }
 
@@ -39,7 +41,7 @@ body {
 
 /* ---------- Header ---------- */
 header {
-  background: linear-gradient(135deg, #cfd6de 0%, #c3ccd6 100%);
+  background: linear-gradient(135deg, #161d27 0%, #111722 100%);
   box-shadow: var(--shadow);
   margin-top: 24px;
   border-radius: var(--radius);
@@ -75,11 +77,12 @@ h1 {
   position: relative;
   left: -20px;
   margin: 0 0 16px 0;
-  color: var(--text);
+  color: #f3f6ff;
   font-size: 2.2rem;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 12px rgba(122, 113, 194, 0.18);
 }
 
 .nav-and-icons {
@@ -111,16 +114,17 @@ h1 {
 .sidebar ul li a {
   text-decoration: none;
   color: var(--text);
-  font-weight: 400;
-  font-size: 1.50rem;
-  padding: 6px 2px;
+  font-weight: 600;
+  font-size: 1.35rem;
+  padding: 6px 8px;
   border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
 }
 
 .sidebar ul li a:hover {
-  color: var(--accent-dark);
-  border-bottom-color: var(--accent);
+  color: #d3c6ff;
+  border-bottom-color: #7c6bc5;
+  text-shadow: 0 0 10px rgba(124, 107, 197, 0.35);
 }
 
 /* ---------- Social icons ---------- */
@@ -137,18 +141,20 @@ h1 {
   justify-content: center;
   height: 2.4rem;
   width: 2.4rem;
-  background-color: var(--accent);
-  color: #fff;
+  background: linear-gradient(135deg, #273347 0%, #3c4d68 100%);
+  color: #f3f6fb;
   border-radius: 50%;
   font-size: 1rem;
   text-decoration: none;
+  border: 1px solid rgba(140, 160, 200, 0.22);
   box-shadow: var(--shadow-soft);
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .social-icons .social-icon:hover {
-  background-color: var(--accent-dark);
+  background: linear-gradient(135deg, #4b5c82 0%, #6d5aa5 100%);
   transform: translateY(-2px);
+  box-shadow: 0 0 14px rgba(120, 110, 200, 0.28);
 }
 
 /* ---------- Main ---------- */
@@ -158,11 +164,11 @@ main {
 
 .card,
 section {
-  background: var(--surface);
+  background: linear-gradient(180deg, #171d26 0%, #141922 100%);
   padding: 28px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  border: 1px solid rgba(215, 224, 234, 0.8);
+  border: 1px solid rgba(80, 93, 115, 0.35);
   margin-bottom: 22px;
 }
 
@@ -185,15 +191,15 @@ h3 {
 
 h4 {
   font-size: 1.05rem;
-  color: #ffffff;
-  background: linear-gradient(135deg, #4b6278 0%, #61788d 100%);
+  color: #f5f7fb;
+  background: linear-gradient(135deg, #2f4058 0%, #4f5f85 55%, #6b5aa6 100%);
   padding: 12px 14px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 6px 18px rgba(50, 60, 90, 0.28);
   margin-top: 0;
   margin-bottom: 16px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 p {
@@ -213,11 +219,11 @@ p {
   margin: 0 auto;
 }
 
-.center-box p {
-  color: var(--text-soft);
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.9;
+.center-box p,
+.cv-detail,
+.info-list li,
+.center-list ol {
+  color: #c7d1e0;
 }
 
 /* ---------- Research ---------- */
@@ -279,22 +285,24 @@ p {
 
 /* ---------- Links in content ---------- */
 a {
-  color: var(--accent-dark);
+  color: #9fb7ff;
 }
 
 a:hover {
-  color: var(--accent);
+  color: #c4b5fd;
 }
+
 
 /* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 18px 16px;
-  background: linear-gradient(135deg, #243142 0%, #182231 100%);
-  color: white;
+  background: linear-gradient(135deg, #0f141c 0%, #0a0d13 100%);
+  color: #d8dfeb;
   border-radius: 14px 14px 0 0;
   margin-top: 12px;
   box-shadow: var(--shadow);
+  border-top: 1px solid rgba(120, 130, 160, 0.2);
 }
 
 footer p {
