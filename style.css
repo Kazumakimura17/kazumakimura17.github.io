@@ -224,6 +224,9 @@ p {
 .info-list li,
 .center-list ol {
   color: #c7d1e0;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.9;
 }
 
 /* ---------- Research ---------- */
