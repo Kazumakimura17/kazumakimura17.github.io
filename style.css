@@ -708,3 +708,16 @@ footer p {
     gap: 6px;
   }
 }
+.inline-pdf-link {
+  display: inline;
+  margin-left: 0.35em;
+  color: #cdbdff;
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.inline-pdf-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
